@@ -1,4 +1,4 @@
-import { updateProductDescription } from '../../src/repository/product/product.repository';
+import { updateProductDescription } from '../../src/repository/Product/product.repository';
 import { createApiRoot } from '../../src/client/create.client';
 import { logger } from '../../src/utils/logger.utils';
 import { readConfiguration } from '../../src/utils/config.utils';

@@ -1,9 +1,9 @@
 import { post } from '../../src/controllers/event.controller';
 import { Request, Response } from 'express';
 import { logger } from '../../src/utils/logger.utils';
-import { productAnalysis } from '../../src/services/vision-ai/productAnalysis.service';
-import { generateProductDescription } from '../../src/services/generative-ai/descriptionGeneration.service';
-import { updateProductDescription } from '../../src/repository/product/product.repository';
+import { productAnalysis } from '../../src/services/Vision AI/productAnalysis.service';
+import { generateProductDescription } from '../../src/services/Generative AI/descriptionGeneration.service';
+import { updateProductDescription } from '../../src/repository/Product/product.repository';
 
 jest.mock('../../src/utils/logger.utils', () => ({
   logger: {
@@ -12,15 +12,15 @@ jest.mock('../../src/utils/logger.utils', () => ({
   },
 }));
 
-jest.mock('../../src/services/vision-ai/productAnalysis.service', () => ({
+jest.mock('../../src/services/Vision AI/productAnalysis.service', () => ({
   productAnalysis: jest.fn(),
 }));
 
-jest.mock('../../src/services/generative-ai/descriptionGeneration.service', () => ({
+jest.mock('../../src/services/Generative AI/descriptionGeneration.service', () => ({
   generateProductDescription: jest.fn(),
 }));
 
-jest.mock('../../src/repository/product/product.repository', () => ({
+jest.mock('../../src/repository/Product/product.repository', () => ({
   updateProductDescription: jest.fn(),
 }));
 
@@ -36,7 +36,7 @@ describe('Event Controller', () => {
           { url: 'https://example.com/image.jpg' }
         ],
         attributes: [
-          { name: 'gen-description', value: 'true' }
+          { name: 'generateDescription', value: true }
         ]
       }
     }

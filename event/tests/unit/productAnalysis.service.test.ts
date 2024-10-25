@@ -1,4 +1,4 @@
-import { productAnalysis } from '../../src/services/vision-ai/productAnalysis.service';
+import { productAnalysis } from '../../src/services/Vision AI/productAnalysis.service';
 import { visionClient } from '../../src/config/ai.config';
 import { logger } from '../../src/utils/logger.utils';
 

@@ -1,4 +1,4 @@
-import { generateProductDescription } from '../../src/services/generative-ai/descriptionGeneration.service';
+import { generateProductDescription } from '../../src/services/Generative AI/descriptionGeneration.service';
 import { model } from '../../src/config/ai.config';
 import { logger } from '../../src/utils/logger.utils';
 
