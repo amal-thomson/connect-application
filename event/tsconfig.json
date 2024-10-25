@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "commonjs",
+    "lib": ["es2022"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "outDir": "./build",
+    "rootDir": "./src",
+    "inlineSourceMap": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "types": ["node", "jest"]
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "build"
+  ],
+  "include": [
+    "src/**/*"
+  ]
+}
